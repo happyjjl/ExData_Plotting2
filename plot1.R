@@ -16,5 +16,10 @@ totalPM25 <- tapply(NEI$Emissions,NEI$year,sum)
 
 ## plot and save to file
 png(filename = "plot1.png")
-barplot(totalPM25, xlab = "year", ylab = "Total PM2.5 Emissions")
+barplot(
+  totalPM25, 
+  xlab = "year", 
+  ylab = "Total PM2.5 Emissions", 
+  main = "Total PM2.5 Emissions over Years in US"
+)
 dev.off()
